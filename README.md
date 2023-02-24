@@ -13,7 +13,6 @@ Then go to the cmd, run as administrator and copy this
 ```
 pip install pygame
 pip intall math
-pip install colorsys
 ```
 
 If you are getting "ModuleNotFoundError: No module named 'requests'" error then it means either requests module is not installed or if it is installed then python is not able to find it. If it is not installed then you can easily install by using this command
