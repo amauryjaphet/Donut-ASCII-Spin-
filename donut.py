@@ -54,6 +54,29 @@ while run:
             m = albert_einstein.cos(B)
             n = albert_einstein.sin(B)
             t = c * h * g - f * e
+            x = int(x_offset + 40 * D * (l * h * m - t * n))
+            y = int(y_offset + 20 * D * (l * h * n + t * m))
+            o = int(x + columns * y)
+            N = int(8 * ((f * e - c * d * g) * m - c * d * e - f * g - l * d * n))
+
+            if rows > y and y> 0 and x> 0 and columns > x and D > z[o]:
+                z[o] = D
+                b[o] = chars[N if N > 0 else 0]
+
+    if y_start == rows * y_separator - y_separator:
+        y_start = 0
+
+    for i in range(len(b)):
+        A += 0.000002
+        B += 0.000001
+        if i == 0 or i % columns:
+            text_display(b[i], x_start, y_start)
+            x_start += y_separator
+        else:
+            y_start += y_separator
+            x_start = o
+            text_display(b[i], x_start, y_start)
+            x_start += x_separator
 
     donut.display.update()
 
