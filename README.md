@@ -12,7 +12,7 @@ Then go to the cmd, run as administrator and copy this
 
 ```
 pip install pygame
-pip intall math
+pip install math
 ```
 
 If you are getting "ModuleNotFoundError: No module named 'requests'" error then it means either requests module is not installed or if it is installed then python is not able to find it. If it is not installed then you can easily install by using this command
@@ -27,4 +27,4 @@ NOTE: pygame requires a "newer" pip. If pygame starts compiling from source and 
 py -m ensurepip --upgrade
 ```
 
-Then open the python file and THERE YOU GO!!!!
+Then open the python file and enjoy!
